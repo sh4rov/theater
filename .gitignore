@@ -1,0 +1,17 @@
+# Файлы и папки операционной системы
+.DS_Store
+Thumbs.db
+.checksums
+
+# Файлы редактора
+.idea
+*.sublime*
+
+# Вспомогательные файлы
+*.log*
+node_modules/
+yarn.lock
+yarn-error.log
+
+# Папка с собранными файлами проекта
+build/
