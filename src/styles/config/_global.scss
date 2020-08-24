@@ -1,0 +1,13 @@
+.btn {
+  font-size: 1.8rem;
+  background-color: $clr-secondary;
+  color: $clr-light;
+  padding-left: 2.6em;
+  padding-right: 2.6em;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  @include container;
+}

@@ -1,5 +1,6 @@
-header.header {
+.header {
   width: 100%;
-  border: 2px solid black;
-  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

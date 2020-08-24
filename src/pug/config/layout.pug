@@ -11,9 +11,13 @@ html(lang="ru")
   body
     .wrapper
 
-      //- Header
-      include ../../modules/header/header.pug
+      .top-section
+        //- Header
+        include ../../modules/header/header
 
+        //- Hero
+        include ../../modules/hero/hero
+        
       main.content
         block content
 

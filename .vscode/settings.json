@@ -1,12 +1,14 @@
 {
   "files.exclude": {
-    ".babelrc.js": true,
     ".eslintignore": true,
     ".eslitrc.json": true,
     ".gitignore": true,
     ".prettierrc": true,
     "package.json": true,
     "yarn.lock": true,
-    "node_modules": true
+    "node_modules": true,
+    ".vscode": true,
+    ".babelrc.js": true,
+    "gulpfile.babel.js": true
   }
 }

@@ -5,7 +5,7 @@ import pug from 'gulp-pug';
 import plumber from 'gulp-plumber';
 import changed from 'gulp-changed';
 import debug from 'gulp-debug';
-import webpHTML from 'gulp-webp-html';
+import pretty from 'gulp-pretty-html';
 
 const html = () => {
   return src(paths.views.src)
@@ -14,12 +14,10 @@ const html = () => {
     .pipe(changed(paths.dest), {
       extention: '.html',
     })
-    .pipe(
-      pug({
-        pretty: true,
-      })
-    )
-    .pipe(webpHTML())
+    .pipe(pug())
+    .pipe(pretty({
+      indent_size: 2,
+    }))
     .pipe(dest(paths.views.dest));
 };
 
