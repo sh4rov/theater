@@ -1,3 +1,12 @@
 header.header
-  include ../main-nav/main-nav
-  include ../number/number
+  .container
+    .header__inner
+      nav.nav
+      ul.nav__list
+        li.nav__item: a.nav__link(href='#') Главная
+        li.nav__item: a.nav__link(href='#') О театре
+        li.nav__item: a.nav__link(href='#') Наши постановки
+        li.nav__item: a.nav__link(href='#') Партнеры театра
+        li.nav__item: a.nav__link(href='#') Контакты
+      .number-wrp
+        span.number +7 495 123-45-67
