@@ -15,7 +15,7 @@ const images = () => {
     .pipe(debug())
     .pipe(
       webp({
-        quality: 80,
+        quality: 65,
       })
     )
     .pipe(dest(paths.images.dest))
@@ -26,11 +26,6 @@ const images = () => {
           interlaced: true,
           progressive: true,
           optimizationLevel: 5,
-          svgoPlugins: [
-            {
-              removeViewBox: true,
-            },
-          ],
         }),
         {
           name: 'imagemin',

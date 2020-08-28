@@ -1,3 +1,4 @@
+include ../utils/mixins
 block vars
 
 doctype html
@@ -7,16 +8,18 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title #{title}
     block styles
+      link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
       link(rel="stylesheet", href="css/main.min.css")
   body
+    include ../../../build/img/sprite/sprite.svg
+
     .wrapper
+      
+      //- Header
+      include ../../modules/header/header
 
-      .top-section
-        //- Header
-        include ../../modules/header/header
-
-        //- Hero
-        include ../../modules/hero/hero
+      //- If you need hero section
+      block hero
         
       main.content
         block content
@@ -25,4 +28,4 @@ html(lang="ru")
       include ../../modules/footer/footer.pug
 
     block scripts
-      script(src='main.min.js')
+      script(src='js/main.min.js')

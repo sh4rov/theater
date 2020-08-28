@@ -1,14 +1,28 @@
 section.hero
   .container
     .hero__inner
-      .hero__col_text
+      .hero__col.hero__col_text
         h1.hero__title Большой театр
         p.hero__description.
           Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
-      .hero__col_img
-        .hero__img-wrp
-          picture
-            source(src="img/content/promo.webp", type="image/webp")
-            img.hero__img(src='img/content/promo.png')
-        .hero__nav-btn.hero__nav-btn_prev
-        .hero__nav-btn.hero__nav-btn-next
+
+      .hero__col.hero__col_img
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              .hero__img-outer
+                .hero__img-wrp
+                  picture
+                    source(src="img/content/promo.webp" type="image/webp")
+                    img.hero__img(src='img/content/promo.png')
+            .swiper-slide
+              .hero__img-outer
+                .hero__img-wrp
+                  picture
+                    source(src="img/content/promo.webp" type="image/webp")
+                    img.hero__img(src='img/content/promo.png')
+        .hero__nav
+          button.hero__nav-btn.hero__nav-btn_prev Пред
+            +icon('arrow-prev','hero__icon-prev')
+          button.hero__nav-btn.hero__nav-btn_next След
+            +icon('arrow-next','hero__icon-next')

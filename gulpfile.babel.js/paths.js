@@ -24,6 +24,11 @@ module.exports = {
     dest: './build/img',
   },
 
+  svg: {
+    src: './src/img/icons/**/*.svg',
+    dest: './build/img/sprite',
+  },
+
   js: {
     src: './src/js/**/*.js',
     dest: './build/js',

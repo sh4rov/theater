@@ -26,6 +26,18 @@
     font-family: 'Open Sans';
   }
 
+  &__img-outer {
+    margin-bottom: 3.5rem;
+    padding-right: 2rem;
+  }
+
+  &__img-wrp {
+    
+    img {
+      width: cacl(100% - 20px);
+    }
+  }
+
   &__img-wrp::after {
     $imgGradient: rgba($clr-secondary, .8);
     content: '';
@@ -38,9 +50,33 @@
     height: 490px;
     background: linear-gradient($imgGradient, $imgGradient),
       url('../img/content/promo.png');
-    // background: linear-gradient(to right, transparent, mistyrose),
-    //   url("https://mdn.mozillademos.org/files/15525/critters.png");
     background-size: auto;
   }
 
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-btn {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $clr-light;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__icon-prev {
+    margin-right: 2.5rem;
+    order: -1;
+  }
+
+  &__icon-next {
+    margin-left: 2.5rem;
+  }
 }

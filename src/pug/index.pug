@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="css/main.min.css")
-    title Большой театр
-  body
-    .wrapper
-      include ../modules/header/header 
-      include ../modules/hero/hero
+extends config/layout
+
+block vars
+
+block hero
+  include ../modules/hero/hero
+
+block content
+
+prepend scripts
+  script(src='https://unpkg.com/swiper/swiper-bundle.min.js')

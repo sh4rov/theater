@@ -1,0 +1,17 @@
+//- Код шаблона, на основе которого будут генерироваться стили для спрайта.
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-arrow-next {
+  font-size:(16/10)*1rem;
+  width:(41/16)*1em;
+}
+.icon-arrow-prev {
+  font-size:(16/10)*1rem;
+  width:(41/16)*1em;
+}
