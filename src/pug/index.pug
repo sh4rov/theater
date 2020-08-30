@@ -2,6 +2,9 @@ extends config/layout
 
 block vars
 
+prepend styles 
+  link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+
 block hero
   include ../modules/hero/hero
 

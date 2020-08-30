@@ -1,9 +1,9 @@
 const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
+  loop: true,
   spaceBetween: 20,
+  speed: 400,
   grabCursor: true,
+  slidesPerView: 1,
 
   // Navigation arrows
   navigation: {

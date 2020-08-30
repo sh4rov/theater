@@ -14,7 +14,7 @@ import grid from './tasks/smartGrid';
 
 global.paths = require('./paths');
 
-export const build = series(clean, grid, svg, parallel(html, styles, images, fonts));
+export const build = series(clean, grid, svg, parallel(html, styles, js, images, fonts));
 
 export const dev = series(build, serve);
 

@@ -1,20 +1,25 @@
 .hero {
-
   &__inner {
+    @include row-flex;
     justify-content: space-between;
     align-items: center;
     height: calc(100vh - 5.7rem);
-    @include row-flex;
+  }
+
+  &__col {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @include size(6);
+    @include size-md(12);
   }
 
   &__col_text {
-    @include size(6);
+  
   }
 
   &__col_img {
-    position: relative;
-    margin-right: 11rem;
-    @include size(4);
+   
   }
 
   &__title {
@@ -26,18 +31,25 @@
     font-family: 'Open Sans';
   }
 
-  &__img-outer {
-    margin-bottom: 3.5rem;
-    padding-right: 2rem;
+  &__swiper-container {
+    max-width: 100%;
+  }
+
+  &__swiper-wrapper {
+    margin-bottom: 5.5rem;
+  }
+
+  &__swiper-slide {
+    display: flex;
+    justify-content: center;
   }
 
   &__img-wrp {
-    
-    img {
-      width: cacl(100% - 20px);
-    }
+    position: relative;
+    align-self: center;
+    padding-right: 2rem;
   }
-
+  
   &__img-wrp::after {
     $imgGradient: rgba($clr-secondary, .8);
     content: '';
@@ -56,7 +68,7 @@
 
   &__nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &__nav-btn {
