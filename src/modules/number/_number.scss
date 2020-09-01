@@ -1,9 +1,16 @@
+.number-wrp {
+  @media (min-width: 62rem) {
+    margin-left: 16.5rem;
+  }
+}
+
 .number {
   margin-left: auto;
   font-size: 1.6rem;
   color: $clr-light;
   font-weight: 700;
   text-decoration: none;
+  word-wrap: normal;
 
   border-bottom: .2rem solid $clr-secondary;
   letter-spacing: .05em;

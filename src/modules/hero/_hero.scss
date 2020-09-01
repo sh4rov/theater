@@ -1,38 +1,49 @@
 .hero {
+
+  @media (max-width: 62rem) {
+    margin-top: 23rem;   
+  }
+
   &__inner {
-    @include row-flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: calc(100vh - 5.7rem);
+   
+
+    @media (min-width: 62rem) {
+      height: calc(100vh - 5.7rem);
+      align-items: center;
+    }
   }
 
   &__col {
     display: flex;
     flex-flow: column nowrap;
-
-    @include size(6);
-    @include size-md(12);
   }
 
   &__col_text {
-  
+    max-width: 540px;
   }
 
-  &__col_img {
-   
+  &__col_slide {
+    @media (max-width: 62rem) {
+      display: none;
+    }
   }
 
   &__title {
     font-size: 6.4rem;
+    white-space: nowrap;
   }
 
   &__description {
     font-size: 1.4rem;
     font-family: 'Open Sans';
+    margin-bottom: 5rem;
+    
   }
 
   &__swiper-container {
-    max-width: 100%;
+    max-width: 370px;
   }
 
   &__swiper-wrapper {
@@ -68,7 +79,7 @@
 
   &__nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   &__nav-btn {

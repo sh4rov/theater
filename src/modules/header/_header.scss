@@ -1,9 +1,14 @@
 .header {
-  
+  padding-top: 5rem;
+
   &__inner {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 62rem) {
+      flex-flow: column nowrap;
+      align-items: center;
+    }
   }
 }

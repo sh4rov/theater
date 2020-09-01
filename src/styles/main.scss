@@ -1,13 +1,24 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import 'config/vars';
+@import 'utils/mixins';
 @import 'config/fonts';
-@import 'utils/smart-grid';
 @import 'utils/sprite';
+
+html {
+  box-sizing: border-box;
+}
 
 html, body {
   height: 100%;
   font-size: 62.5%;
 }
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 
 body {
   font-family: $font-primary;
@@ -17,6 +28,10 @@ body {
   color: $clr-light;
   background-color: $clr-primary;
   background-image: url('../img/hero-background.png');
+
+  @media (max-width: 62rem) {
+    background-position: top center;
+  }
 }
 
 .wrapper {

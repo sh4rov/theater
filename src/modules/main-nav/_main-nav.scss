@@ -1,21 +1,27 @@
 .nav {
-  @include size-lg(9);
-  @include row-flex;
+  flex-grow: 1;
+  @media (max-width: 62rem) {
+    margin-bottom: 4rem;
+    width: 100%;
+  }
 
   &__list {
     display: flex;
-    list-style: none;
     justify-content: space-between;
+   
+    list-style: none;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 6.3rem;
-  }
+  // &__item:not(:last-child) {
+  //   padding: 0 3rem;
+  // }
+
   &__link {
     font-size: 1.8rem;
     font-weight: 700;
     color: $clr-light;
     text-decoration: none;
     letter-spacing: .1em;
+    white-space: nowrap;
   }
 }
