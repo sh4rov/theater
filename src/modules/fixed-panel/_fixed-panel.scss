@@ -1,0 +1,59 @@
+.fixed-panel {
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: end;
+  height: 100vh;
+  padding-left: 6.2rem;
+  padding-right: 6.2rem;
+  padding-bottom: 8.6rem;
+  background-color: rgba($clr-primary, .75);
+
+  & > *:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: $clr-light-gray;
+  }
+
+  &__sep {
+    display: block;
+    display: block;
+    height: 8rem;
+    width: .3rem;
+
+    background-color: $clr-light;
+    content: '';
+    background-color: currentColor;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    margin: -1.5rem 0;
+   
+  }
+
+  &__item {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgba(#fff, .6);
+    transition: all .3s ease;
+
+    &:hover {
+      color: $clr-secondary;
+    }
+  }
+}

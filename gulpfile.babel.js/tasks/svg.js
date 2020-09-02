@@ -37,6 +37,7 @@ const svg = function () {
       cheerio({
         run: function ($) {
           $('[fill]').removeAttr('fill');
+          $('[fill-opacity]').removeAttr('fill-opacity');
           $('[stroke]').removeAttr('stroke');
           $('[style]').removeAttr('style');
         },
