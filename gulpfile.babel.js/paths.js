@@ -20,7 +20,7 @@ module.exports = {
 
   images: {
     root: './src/img',
-    src: './src/img/**/*.{png,jpg,jpeg,webp}',
+    src: ['./src/img/**/*.{png,jpg,jpeg,webp,svg}','!./src/img/icons/**/*.svg'],
     dest: './build/img',
   },
 
