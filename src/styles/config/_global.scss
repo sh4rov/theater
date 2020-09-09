@@ -11,7 +11,7 @@
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--offset-container);
@@ -19,6 +19,7 @@
   
   @media(max-width: 62rem) {
     max-width: 692px;
+    
   }
 }
 
@@ -26,6 +27,28 @@
   display: none;
 }
 
+
 img {
   max-width: 100%;
+}
+
+.content {
+  background-color: $clr-primary;
+}
+
+.title-section {
+  margin-bottom: 10rem;
+  text-align: center;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: .1em;
+
+  &_accent {
+    color: $clr-secondary;
+  }
+}
+
+.trans-all {
+  transition: all .2s ease-in-out;
 }

@@ -19,7 +19,6 @@ html, body {
   box-sizing: inherit;
 }
 
-
 body {
   font-family: $font-primary;
   line-height: 1.4;
@@ -35,6 +34,7 @@ body {
 }
 
 .wrapper {
+  // position: relative;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;

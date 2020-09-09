@@ -1,0 +1,22 @@
+.about
+  .container
+    section.about__inner
+      h2.title-section #[span.title-section_accent О] театре
+      .about__row
+        .about-col.about-col_description
+          h3.about__title Самый лучший театр спб
+          .about-col__body
+            p.about__description.
+              Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.
+        .about-col.about-col_numb
+          h3.about__title Немного о цифрах
+          .about-col__body_numb
+            +icon('armchair', 'about__vector')
+            p.about__subtitle #[span 1600] посадочных мест
+            +icon('theater', 'about__vector')
+            p.about__subtitle #[span 350] лет истории
+        .about-col.about-col_picture
+          picture
+            source(src='img/content/about-theater.webp',
+            type='image/webp')
+            img(src='img/content/about-theater.jpg')

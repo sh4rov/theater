@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const heroSwiper = new Swiper('.hero__swiper-container', {
   spaceBetween: 20,
   speed: 400,
   grabCursor: true,
@@ -10,3 +10,8 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.hero__nav-btn_prev',
   },
 });
+
+const projectsSwiper = new Swiper('.projects__swiper-container', {
+  slidesPerView: 4,
+  loop: true,
+})
