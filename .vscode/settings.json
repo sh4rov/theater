@@ -8,6 +8,7 @@
     "yarn.lock": true,
     "node_modules": true,
     ".vscode": true,
-    ".babelrc.js": true
+    ".babelrc.js": true,
+    "gulpfile.babel.js": true
   }
 }

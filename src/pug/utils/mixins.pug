@@ -5,3 +5,17 @@ mixin icon(name,mod)
 
 mixin btn(title)
   a.btn(href='#')= title
+
+mixin projectsCard(filename, title, date)
+  a.projects-card(href='javascript:void(0)')
+    .projects-card__picture
+      .projects-card__search
+        +icon('search', 'projects-card__icon')
+      picture
+        source(
+        srcset='img/content/' + filename + '.webp',
+        )
+        img(src='img/content/' + filename + '.png')
+    .projects-card__content
+      .projects-card__title= title
+      .projects-card__date= date

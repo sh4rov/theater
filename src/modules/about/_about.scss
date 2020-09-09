@@ -1,14 +1,9 @@
 .about {
   padding-top: 150px;
-  background-color: $clr-primary;
 
   &__inner {
     display: flex;
     flex-flow: column nowrap;
-  }
-
-  &__title-section {
-    margin-bottom: 10rem;
   }
 
   &__row {

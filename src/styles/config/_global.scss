@@ -32,7 +32,12 @@ img {
   max-width: 100%;
 }
 
+.content {
+  background-color: $clr-primary;
+}
+
 .title-section {
+  margin-bottom: 10rem;
   text-align: center;
   font-size: 4.8rem;
   text-transform: uppercase;
@@ -42,4 +47,8 @@ img {
   &_accent {
     color: $clr-secondary;
   }
+}
+
+.trans-all {
+  transition: all .2s ease-in-out;
 }

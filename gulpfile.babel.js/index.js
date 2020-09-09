@@ -14,10 +14,10 @@ import grid from './tasks/smartGrid';
 
 global.paths = require('./paths');
 
-export const build = series(clean, grid, svg, parallel(html, styles, js, images, fonts));
+export const build = series(svg, parallel(html, styles, js, images, fonts));
+export const prod = series(clean, parallel(html, styles, js, images, fonts));
 
-export const dev = series(build, serve);
 
-export default dev;
+export default serve;
 
 export { html, styles, images, fonts, js, serve, clean, cacheClear, grid, svg };
