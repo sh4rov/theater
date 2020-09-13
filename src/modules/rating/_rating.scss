@@ -1,0 +1,52 @@
+.rating {
+  padding-top: 150px;
+  &__inner {
+    padding-top: 126px;
+    padding-bottom: 126px;
+    display: flex;
+    background: linear-gradient(rgba(#333, .9), rgba(#333, .9)), url('../img/rating-bg.jpg') center/cover no-repeat;
+
+  }
+
+  &__col {
+   
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__col_year {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+
+  &__col_stars {
+    justify-content: center;
+    flex: 1.5 1 60%;
+    text-align: left;
+  }
+
+  &__year {
+    font-size: 7.2rem;
+    color: $clr-secondary;
+    font-weight: 700;
+  }
+
+  &__stars {
+    margin-bottom: 2.5rem;
+  }
+
+  &__star {
+    fill: $clr-secondary;
+  }
+
+  &__star:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 500px;
+  }
+}

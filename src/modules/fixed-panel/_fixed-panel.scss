@@ -1,5 +1,6 @@
 .fixed-panel {
   position: fixed;
+  z-index: 999;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
