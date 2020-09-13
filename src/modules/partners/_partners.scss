@@ -1,0 +1,22 @@
+.partners {
+  padding-top: 150px;
+  padding-bottom: 120px;
+
+  &__inner {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -40px - 39px;
+    overflow-x: hidden;
+  }
+
+  &__icons {
+    fill: $clr-gazprom;
+    margin: 40px 39px;
+  }
+}
