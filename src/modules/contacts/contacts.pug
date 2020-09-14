@@ -1,0 +1,36 @@
+.contacts
+  .container
+    section.contacts__inner
+      h2.title-section #[span.title-section_accent Стать] миценатом
+      .contacts__row
+        .contacts__col.contacts__col_info
+          ul.contacts__list
+            li.contacts__item
+              a.contacts__link(href='tel:+78121234555') +7 (812) 123-45-55
+            li.contacts__item
+              a.contacts__link(href='tel:+78121234566') +7 (812) 123-45-66
+            li.contacts__item
+              a.contacts__link(href='mailto:info@theater.ru') info@theater.ru
+            li.contacts__item
+              a.contacts__link(href='mailto:info@theater.ru') info@theater.ru
+            li.contacts__item.
+              г. санкт-петербург, невский 140
+
+        .contacts__col.contacts__col_form
+          form(action="" method='post')
+            .form__inner
+              .form__col.form__col_input
+                div.form__input-wrp
+                  input.form__input(type="text" placeholder='Имя')
+                div.form__input-wrp
+                  input.form__input(type="text" placeholder='Компания')
+                div.form__input-wrp
+                  input.form__input(type="text" placeholder='Телефон')
+                div.form__input-wrp
+                  input.form__input(type="email" placeholder='E-mail')
+              .form__col.form__col_message
+                textarea.form__message(placeholder='Сообщение')
+
+              p.from__info.
+                * Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.
+              button.btn(type='button') Отправить
