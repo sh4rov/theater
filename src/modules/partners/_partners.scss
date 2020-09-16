@@ -1,22 +1,32 @@
 .partners {
   padding-top: 150px;
   padding-bottom: 120px;
+  overflow-x: hidden;
 
   &__inner {
     display: flex;
     flex-flow: column nowrap;
   }
 
-  &__row {
+  &__content {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin: -40px - 39px;
     overflow-x: hidden;
+  }
+
+  &__row {
+    justify-content: start;
+  }
+
+  &__row:not(:last-child) {
+    margin-bottom: 80px;
   }
 
   &__icons {
     fill: $clr-gazprom;
-    margin: 40px 39px;
+  }
+
+  &__icons:not(:last-child) {
+    margin-right: 78px;
   }
 }
