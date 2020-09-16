@@ -1,5 +1,13 @@
 :root {
   --offset-container: 15px;
+
+  @media (max-width: 768px) {
+    --offset-container: 40px;
+  }
+  
+  @media (max-width: 576px) {
+    --offset-container: 33px;
+  }
 }
 
 

@@ -11,9 +11,9 @@ const html = () => {
   return src(paths.views.src)
     .pipe(plumber())
     .pipe(debug())
-    .pipe(changed(paths.dest), {
-      extention: '.html',
-    })
+    // .pipe(changed(paths.dest), {
+    //   extention: '.html',
+    // })
     .pipe(pug())
     .pipe(pretty({
       indent_size: 2,
