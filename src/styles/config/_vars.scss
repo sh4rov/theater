@@ -1,12 +1,19 @@
 :root {
-  --offset-container: 15px;
+  --container-size: 1110px;
+  --container-gutter: 40px;
+  --gutter: 30px;
+
+  @media (max-width: 992px) {
+    --container-size: 770px;
+  }
 
   @media (max-width: 768px) {
-    --offset-container: 40px;
+    --container-gutter: 40px;
   }
   
   @media (max-width: 576px) {
-    --offset-container: 33px;
+    --container--size: 510px;
+    --container-gutter: 33px;
   }
 }
 
