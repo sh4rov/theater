@@ -1,9 +1,7 @@
 .contacts {
-
   margin-bottom: 80px;
-  
+
   &__row {
-   
     @media (max-width: 992px) {
       flex-direction: column;
     }
@@ -27,7 +25,11 @@
 
     @media (max-width: 992px) {
       margin-bottom: 80px;
-     }
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: calc(var(--gutter) + 10px);
+    }
   }
 
   &__list {
@@ -39,6 +41,11 @@
     @media (max-width: 992px) {
       flex-direction: row;
     }
+
+    @media (max-width: 420px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__list-inner {
@@ -48,13 +55,16 @@
       &_numbers {
         text-align-last: left;
       }
-  
+
       &_adress {
         text-align: right;
       }
     }
-  }
 
+    @media (max-width: 420px) {
+      text-align: center;
+    }
+  }
 
   &__item {
     font-size: 1.6rem;
@@ -71,11 +81,6 @@
 
 .form__inner {
   display: flex;
-  flex-flow: row wrap;
-}
-
-.form__inner {
-  display: flex;
   flex-flow: column nowrap;
 }
 
@@ -85,7 +90,7 @@
 
   &_top {
     min-height: 100px;
-    margin-bottom: 40px;
+    margin-bottom: calc(var(--gutter) + 10px);
   }
 
   &_top,
@@ -93,12 +98,10 @@
     justify-content: space-between;
   }
 
-
-
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     &_top {
       flex-direction: column;
-      justify-content: space-between; 
+      justify-content: space-between;
     }
 
     &_bottom {
@@ -130,7 +133,7 @@
 }
 
 .form__col-inner {
-  width: calc(100% / 2 - (calc(var(--gutter) / 2)));
+  width: calc(50% - var(--gutter) / 2);
   justify-content: space-between;
 
   @media (min-width: 576px) {
@@ -144,7 +147,7 @@
   padding: 10px 15px;
   border-style: none;
   font-size: 1.2rem;
-  
+
   font-family: 'Open Sans';
   border: 1px solid #616161;
 
@@ -165,7 +168,6 @@
   @media (min-width: 576px) {
     max-width: 310px;
   }
-
 }
 
 .form__input-wrp:nth-child(odd) {
@@ -187,11 +189,14 @@
     max-width: 390px;
     text-align: left;
   }
-    
 }
 
 .form__btn {
-  margin-bottom: var(--gutter);
+  max-width: 19rem;
   align-self: center;
   border-style: none;
+
+  @media (max-width: 576px) {
+    margin-bottom: var(--gutter);
+  }
 }
