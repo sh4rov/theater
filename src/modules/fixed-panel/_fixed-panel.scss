@@ -40,7 +40,6 @@
     flex-flow: column wrap;
     list-style: none;
     margin: -1.5rem 0;
-   
   }
 
   &__item {
@@ -55,6 +54,15 @@
 
     &:hover {
       color: $clr-secondary;
+    }
+  }
+
+  @media (max-width: 769px) {
+    justify-content: space-between;
+    &__title,
+    &__sep {
+      display: none;
+      content-visibility: auto;
     }
   }
 }

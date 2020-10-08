@@ -1,12 +1,16 @@
 .header {
   padding-top: 5rem;
 
+  @media (min-width: 769px) {
+    margin-bottom: 23rem;   
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 62rem) {
+    @media (min-width: 769px) and (max-width: 992px) {
       flex-flow: column nowrap;
       align-items: center;
     }
