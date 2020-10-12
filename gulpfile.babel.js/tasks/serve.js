@@ -1,5 +1,6 @@
 import { watch } from 'gulp';
-import html from './html';
+import { html } from '../index';
+import data from './data';
 import styles from './styles';
 import images from './images';
 import js from './scripts';
@@ -23,6 +24,8 @@ const serve = () => {
   watch(paths.styles.watch, styles).on('change', bs.reload);
 
   watch(paths.views.watch, html).on('change', bs.reload);
+
+  watch(paths.data.watch, data).on('change', bs.reload);
 
   watch(paths.js.watch, js).on('change', bs.reload);
 

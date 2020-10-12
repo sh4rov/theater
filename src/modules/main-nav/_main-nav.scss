@@ -1,8 +1,13 @@
 .nav {
   flex-grow: 1;
+  
   @media (max-width: 62rem) {
     margin-bottom: 4rem;
     width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 
   &__list {

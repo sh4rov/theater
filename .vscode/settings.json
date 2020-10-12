@@ -4,7 +4,6 @@
     ".eslitrc.json": true,
     ".gitignore": true,
     ".prettierrc": true,
-    "package.json": true,
     "yarn.lock": true,
     "node_modules": true,
     ".vscode": true,
