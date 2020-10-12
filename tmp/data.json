@@ -7,5 +7,17 @@
       "Парнеры театра",
       "Контакты"
     ]
+  },
+  "nav": {
+    "link": [
+      {
+        "title": "banana",
+        "href": "/banana"
+      },
+      {
+        "title": "mango",
+        "href": "/mango"
+      }
+    ]
   }
 }

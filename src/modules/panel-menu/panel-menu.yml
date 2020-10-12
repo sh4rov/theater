@@ -1,10 +1,5 @@
-nav: 
+---
+nav:
   link:
-    title: banana
-    href: /banana
-  link: 
-    title: tomato
-    href: /tomato
-  link: 
-    title: mango
-    href: /mango
+    - {title: banana, href: /banana}
+    - {title: mango, href: /mango}
