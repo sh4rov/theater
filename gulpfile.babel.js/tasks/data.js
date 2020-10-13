@@ -7,7 +7,7 @@ import plumber from 'gulp-plumber';
 import debug from 'gulp-debug';
 
 const data = function() {
-  return src('**/*.yml', { cwd: 'src/modules'})
+  return src('**/*.yml', { cwd: 'src/modules' })
     .pipe(plumber())
     .pipe(debug())
     .pipe(yaml({
