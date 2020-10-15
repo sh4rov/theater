@@ -1,6 +1,17 @@
 .projects {
   padding-top: 150px;
 
+  @media (max-width: 992px) {
+    &__container {
+      max-width: var(--container-size);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--container-gutter);
+      padding-right: var(--container-gutter);
+    }
+  }
+    
+
   &__inner {
     display: flex;
     flex-flow: column nowrap;
@@ -9,16 +20,19 @@
   &__slider {
     display: flex;
     justify-content: flex-end;
-
-    
   }
 
   &__swiper-container {
 
-    @media (min-width: 992px) {
-      width: 85%;
+  }
+
+  @media (min-width: 992px) {
+    &__slider {
+      padding-left: 150px;
     }
   }
+
+
 }
 
 .projects-card {
@@ -31,6 +45,10 @@
 
   &:hover &__picture::after {
     background: transparent;
+  }
+
+  &:hover &__content {
+    opacity: 0;
   }
 
   &__search {
@@ -78,6 +96,8 @@
     top: 40px;
     right: 40px;
     bottom: 40px;
+    
+    @extend .trans-opacity;
   }
 
   &__title,

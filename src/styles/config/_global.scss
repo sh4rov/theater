@@ -57,6 +57,10 @@ img {
   }
 }
 
+.trans-opacity {
+  transition: opacity .3s ease;
+}
+
 .trans-all {
   transition: all .2s ease-in-out;
 }

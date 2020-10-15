@@ -1,17 +1,18 @@
 - const jsVoid = 'javascript:void(0)';
 
 .projects
-  section.projects__inner
-    h2.title-section.prijects__title-section #[span.title-section_accent Наши] постановки
-    .projects__slider
-      .swiper-container.projects__swiper-container
-        .swiper-wrapper.projects__swiper-wrapper
+  .projects__container
+    section.projects__inner
+      h2.title-section.prijects__title-section #[span.title-section_accent Наши] постановки
+      .projects__slider
+        .swiper-container.projects__swiper-container
+          .swiper-wrapper.projects__swiper-wrapper
 
-          .swiper-slide.projects__swiper-slide
-            +projectsCard('oskar','Оскар 2020','Сентябрь 2020')
-          .swiper-slide.projects__swiper-slide
-            +projectsCard('project-empty','Оскар 2020','Сентябрь 2020')
-          .swiper-slide.projects__swiper-slide
-            +projectsCard('gramophone','Оскар 2020','Сентябрь 2020')
-          .swiper-slide.projects__swiper-slide
-            +projectsCard('shelkunchik','Оскар 2020','Сентябрь 2020')
+            .swiper-slide.projects__swiper-slide
+              +projectsCard('oskar','Оскар 2020','Сентябрь 2020')
+            .swiper-slide.projects__swiper-slide
+              +projectsCard('project-empty','Оскар 2020','Сентябрь 2020')
+            .swiper-slide.projects__swiper-slide
+              +projectsCard('gramophone','Оскар 2020','Сентябрь 2020')
+            .swiper-slide.projects__swiper-slide
+              +projectsCard('shelkunchik','Оскар 2020','Сентябрь 2020')
