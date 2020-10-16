@@ -1,9 +1,9 @@
 .rating {
-  padding-top: 150px;
+  margin-bottom: var(--outer-margin);
   &__inner {
-    padding-top: 126px;
-    padding-bottom: 126px;
     display: flex;
+    // padding-top: 126px;
+    // padding-bottom: 126px;
     background: linear-gradient(rgba(#333, .9), rgba(#333, .9)), url('../img/rating-bg.jpg') center/cover no-repeat;
 
   }
@@ -48,5 +48,42 @@
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     max-width: 500px;
+
+    @media (max-width: 992px) {
+      font-size: 3.4rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 2.9rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 460px) {
+
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    &__col {
+      align-items: center;
+    }
+
+    &__year {
+      font-size: 5rem;
+    }
+
+    &__year:last-of-type {
+      margin-bottom: 2rem;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 2rem;
+    }
   }
 }
