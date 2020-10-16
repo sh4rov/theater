@@ -11,10 +11,12 @@
         .about-col.about-col_numb
           h3.about__title Немного о цифрах
           .about-col__body_numb
-            +icon('armchair', 'about__vector')
-            p.about__subtitle #[span 1600] посадочных мест
-            +icon('theater', 'about__vector')
-            p.about__subtitle #[span 350] лет истории
+            .about-col__item
+              +icon('armchair', 'about__vector')
+              p.about__subtitle #[span 1600] посадочных мест
+            .about-col__item
+              +icon('theater', 'about__vector')
+              p.about__subtitle #[span 350] лет истории
         .about-col.about-col_picture
           picture
             source(src='img/content/about-theater.webp',

@@ -1,9 +1,18 @@
 .about {
   padding-top: 150px;
 
+  @media (max-width: 576px) {
+    .about-col__body_numb {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
+
   &__inner {
     display: flex;
     flex-flow: column nowrap;
+
   }
 
   &__row {
@@ -12,6 +21,10 @@
     flex-wrap: nowrap;
     overflow-y: hidden;
     margin: -1.5rem;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
   }
 
   &__push {
@@ -23,11 +36,16 @@
     font-size: 2.1rem;
     margin-bottom: 1.9em;
     font-weight: 700;
+
+    @media (max-width: 576px) {
+      text-align: center;
+    }
   }
 
   &__subtitle {
     font-size: 1.6rem;
     font-weight: 700;
+    margin-top: auto;
 
     &:not(:last-child) {
       margin-bottom: .95em;
@@ -37,6 +55,17 @@
       color: $clr-secondary;
     }
   }
+
+  &__description {
+    @media (min-width: 361px) and (max-width: 576px) {
+      text-align: center;
+    }
+
+    @media (max-width: 360px) {
+      text-align: justify;
+    }
+  }
+
 }
 
 .about__vector {
@@ -52,7 +81,7 @@
 .about-col_description {
   max-width: 500px;
   font-family: 'Open Sans';
-  font-style: 1.4rem;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 
@@ -70,6 +99,28 @@
   }
 }
 
+.about-col__item {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 15px;
+
+  @media (max-width: 359px) {
+    align-items: center;
+  }
+}
+
 .about-col__body_numb {
   padding-top: .5em;
+  margin: -15px;
+
+  
+  @media (max-width: 359px) {
+    justify-content: center;
+  }
+
+  // @media (min-width: 360px) and (max-width: 480px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-between;
+  // }
 }
