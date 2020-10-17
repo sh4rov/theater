@@ -8,9 +8,8 @@
 
   &__inner {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
    
     @media (min-width: 769px) {
       height: 100vh;
