@@ -1,5 +1,5 @@
 .projects {
-  padding-top: 150px;
+  margin-bottom: var(--outer-margin);
 
   @media (max-width: 992px) {
     &__container {
@@ -22,8 +22,8 @@
     justify-content: flex-end;
   }
 
-  &__swiper-container {
-
+  &__swiper-slide {
+    width: initial;
   }
 
   @media (min-width: 992px) {

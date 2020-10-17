@@ -24,9 +24,6 @@ body {
   line-height: 1.4;
   text-rendering: optimizeSpeed;
   color: $clr-light;
-  background-color: $clr-primary;
-  background-image: url('../img/hero-background.png');
-  background-size: cover;
 
   @media (max-width: 62rem) {
     background-position: top center;
@@ -38,7 +35,6 @@ body {
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden    ;
 }
 
 .content {

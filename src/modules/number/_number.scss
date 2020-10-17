@@ -2,6 +2,10 @@
   @media (min-width: 62rem) {
     margin-left: 16.5rem;
   }
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+  }
 }
 
 .number {

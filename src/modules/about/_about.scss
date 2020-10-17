@@ -1,5 +1,5 @@
 .about {
-  padding-top: 150px;
+  margin-bottom: var(--outer-margin);
 
   @media (max-width: 576px) {
     .about-col__body_numb {

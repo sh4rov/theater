@@ -10,11 +10,13 @@
 
   @media (max-width: 768px) {
     --container-gutter: 40px;
+    --outer-margin: 90px;
   }
   
   @media (max-width: 576px) {
     --container--size: 510px;
     --container-gutter: 33px;
+    --outer-margin: 80px;
   }
 }
 

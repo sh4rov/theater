@@ -1,7 +1,5 @@
 const projectsSwiper = new Swiper('.projects__swiper-container', {
-  slidesPerView: 4,
-  updateOnWindowResize: false,
-  // autoHeight: true,
+  slidesPerView: 'auto',
   loop: true,
   loopedSlides: 4,
   autoplay: true,

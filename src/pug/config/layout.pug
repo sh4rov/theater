@@ -2,7 +2,7 @@ include ../utils/mixins
 block vars
 
 doctype html
-html(lang="ru")
+html(lang="ru" dir="ltr")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -11,14 +11,11 @@ html(lang="ru")
       link(rel="stylesheet" href="css/main.min.css")
   body
     include ../../../build/img/sprite/sprite.svg
-    include ../../modules/fixed-panel/fixed-panel
+    //- include ../../modules/fixed-panel/fixed-panel
 
     .wrapper
       //- Header
       include ../../modules/header/header
-
-      //- If you need hero section
-      block hero
 
       main.content
         block content
