@@ -1,0 +1,8 @@
+.mobile-menu
+  .mobile-menu__toggle
+    include ../hamburger/hamburger
+  .mobile-menu__inner
+    ul.mobile-menu__list
+      each title in menu.links
+        li.mobile-menu__item: a.mobile-menu__link(href="#")= title
+    include ../socials/socials

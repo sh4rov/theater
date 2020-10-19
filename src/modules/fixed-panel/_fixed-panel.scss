@@ -10,6 +10,7 @@
   padding-right: 6.2rem;
   padding-bottom: 8.6rem;
   background-color: rgba($clr-primary, .75);
+  transition: .5s transform ease;
 
   & > *:not(:last-child) {
     margin-bottom: 4rem;
@@ -35,34 +36,11 @@
     background-color: currentColor;
   }
 
-  &__list {
-    display: flex;
-    flex-flow: column wrap;
-    list-style: none;
-    margin: -1.5rem 0;
+  @media (max-width: 768px) {
+    transform: translateX(-100%);
   }
 
-  &__item {
+  .socials__item {
     margin: 1.5rem 0;
-    text-align: center;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: rgba(#fff, .6);
-    transition: all .3s ease;
-
-    &:hover {
-      color: $clr-secondary;
-    }
-  }
-
-  @media (max-width: 769px) {
-    justify-content: space-between;
-    &__title,
-    &__sep {
-      display: none;
-      content-visibility: auto;
-    }
   }
 }
