@@ -1,0 +1,39 @@
+.btn-close {
+  --btn-close-base-size: 16px;
+  --btn-close-height: 2px;
+  --btn-close-transform: 45deg;
+
+  position: relative;
+  display: inline-block;
+  padding: 8px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &__box {
+    position: relative;
+    display: inline-block;
+    width: var(--btn-close-base-size);
+    height: var(--btn-close-base-size);
+  }
+
+  &__inner {
+    top: 50%;
+    left: 0;
+    transform: rotate(45deg);
+
+    &,
+    &::before {
+      position: absolute;
+      width: var(--btn-close-base-size);
+      height: var(--btn-close-height);
+      background-color: $clr-light;
+    }
+
+    &::before {
+      content: '';
+      left: 0;
+      transform: rotate(90deg);
+    }
+  }
+}

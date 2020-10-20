@@ -1,0 +1,42 @@
+.hamburger {
+  --bar-width: 26px;
+  --bar-height: 3px;
+  --bar-spacing: 8px;
+  display: block;
+  width: var(--bar-width);
+  height: calc(var(--bar-height) + (var(--bar-spacing) * 2));
+
+  &__box {
+    display: block;
+  }
+
+  &__inner {
+    position: relative;
+    transform: translateY(var(--bar-spacing));
+    width: calc(var(--bar-width) - 6px);
+
+    &,
+    &::before,
+    &::after {
+      display: block;
+      height: var(--bar-height);
+      background-color: $clr-light;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      width: var(--bar-width);
+      bottom: var(--bar-spacing);
+    }
+
+    &::after {
+      width: calc(var(--bar-width) - 12px);
+      top: var(--bar-spacing);
+    }
+  }
+}

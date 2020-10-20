@@ -16,6 +16,9 @@ const serve = () => {
   bs.init({
     server: {
       baseDir: './build',
+      routes: {
+        './node_modules/': 'node_modules'
+      }
     },
     notify: false,
     open: false,

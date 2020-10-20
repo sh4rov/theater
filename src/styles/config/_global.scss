@@ -69,3 +69,7 @@ img {
 .border {
   border: 1px solid currentColor;
 }
+
+.js-focus-visible:focus:not(.focus-visible) {
+  outline: none;
+}
