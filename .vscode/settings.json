@@ -5,8 +5,11 @@
     ".gitignore": true,
     ".prettierrc": true,
     "yarn.lock": true,
-    "node_modules": true,
     ".vscode": true,
-    ".babelrc.js": true
+    ".babelrc.js": true,
+    "tmp": true,
+    "package.json": true,
+    "gulpfile.babel.js": true,
+    "node_modules": true
   }
 }
