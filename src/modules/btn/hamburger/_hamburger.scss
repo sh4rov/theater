@@ -2,15 +2,24 @@
   --bar-width: 26px;
   --bar-height: 3px;
   --bar-spacing: 8px;
-  display: block;
+  position: relative;
+  display: inline-block;
   width: var(--bar-width);
   height: calc(var(--bar-height) + (var(--bar-spacing) * 2));
+  padding: 10px 8px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  
 
   &__box {
-    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    display: inherit;
   }
 
   &__inner {
+    display: inline-block;
     position: relative;
     transform: translateY(var(--bar-spacing));
     width: calc(var(--bar-width) - 6px);
