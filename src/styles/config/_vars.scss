@@ -4,18 +4,11 @@
   --gutter: 30px;
   --outer-margin: 150px;
 
-  @media (max-width: 992px) {
-    --container-size: 770px;
-  }
-
   @media (max-width: 768px) {
-    --container-gutter: 40px;
     --outer-margin: 90px;
   }
   
   @media (max-width: 576px) {
-    --container--size: 510px;
-    --container-gutter: 33px;
     --outer-margin: 80px;
   }
 }
