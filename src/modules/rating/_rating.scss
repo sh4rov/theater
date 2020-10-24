@@ -1,15 +1,30 @@
 .rating {
   margin-bottom: var(--outer-margin);
+
+  &__container {
+
+    @media (min-width: 993px) {
+      max-width: var(--container-size);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--container-gutter);
+      padding-right: var(--container-gutter);
+    }
+  }
+
   &__inner {
     display: flex;
     padding-top: 126px;
     padding-bottom: 126px;
     background: linear-gradient(rgba(#333, .9), rgba(#333, .9)), url('../img/rating-bg.jpg') center/cover no-repeat;
 
+    @media (max-width: 992px) {
+      padding-left: var(--container-gutter);
+      padding-right: var(--container-gutter);
+    }
   }
 
   &__col {
-   
     display: flex;
     flex-flow: column nowrap;
   }
