@@ -1,4 +1,5 @@
 (() => {
+  // Project Swiper
   const heroSwiper = new Swiper('.hero__swiper-container', {
     spaceBetween: 20,
     speed: 400,
@@ -12,8 +13,15 @@
     },
   });
 
-  // Open and close mobil-menu
+  // Project Swiper
+  const projectsSwiper = new Swiper('.projects__swiper-container', {
+    slidesPerView: 'auto',
+    loop: true,
+    loopedSlides: 4,
+    autoplay: true,
+  });
 
+  // Open and close mobil-menu
   const btnOpen = document.querySelector('.header__btn-menu');
   const btnClose = document.querySelector('.mobile-menu__btn-close');
   const mobileMenu = document.querySelector('.mobile-menu');
@@ -29,7 +37,6 @@
   })
   btnClose.addEventListener('click', removeClassMenuOpen)
 
-  
   function setupForWidth(e) {
     if (e.matches) {
       removeClassMenuOpen;
@@ -37,6 +44,4 @@
   }
 
   mql.addEventListener(setupForWidth);
-
-
 })()
