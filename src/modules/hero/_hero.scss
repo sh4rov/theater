@@ -32,7 +32,8 @@
   }
 
   &__col_text {
-    max-width: 540px;
+    max-width: 54rem;
+    margin-right: 2rem;
   }
 
   &__col_slide {
@@ -47,10 +48,6 @@
     text-transform: uppercase;
     line-height: 1;
 
-    @media (min-width: 577px) {
-      white-space: nowrap;
-    }
-
     @media screen and (max-width: 480px) {
       font-size: 4rem;
     }
@@ -60,6 +57,7 @@
     font-size: 1.4rem;
     font-family: 'Open Sans';
     margin-bottom: 5rem;
+    line-height: 1.5;
     
   }
 

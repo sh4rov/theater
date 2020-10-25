@@ -1,4 +1,6 @@
 .mobile-menu {
+  --socials-bar: 1.5;
+
   position: absolute;
   left: 0;
   top: 0;
@@ -64,18 +66,36 @@
 
     &:hover { cursor: pointer; }
   }
+
+  & .socials__list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 140px;
+    margin: -1rem;
+  }
+
+  & .socials__item {
+    margin: 1rem;
+    flex: 1;
+
+    .socials__item:first-of-type {
+      order: 2;
+    }
+
+    .socials__item:nth-of-type(3) {
+      order: 1;
+    }
+
+    .socials__item:last-of-type {
+      order: 3;
+    }
+  }
+
+  & .socials__link { color: currentColor }
+
+  & .socials__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
 }
 
-.mobil-menu .socials {
-  max-width: 140px;
-}
-
-.mobil-menu .socials__list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.mobil-menu .socials__item {
-  padding: 22px;
-}
