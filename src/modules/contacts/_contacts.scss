@@ -1,16 +1,20 @@
 .contacts {
-  margin-bottom: 80px;
+  padding-bottom: calc(var(--gutter) + 50px);
+
+  @media (max-width: 480px) {
+    padding-bottom: calc(var(--gutter) + 10px);
+  }
 
   &__row {
     justify-content: space-between;
+
     @media (max-width: 992px) {
       flex-direction: column;
     }
   }
 
   &__col_info {
-
-    flex-shrink: .5;
+    flex: 0 1 auto;
 
     & ul {
       list-style: none;
@@ -23,6 +27,10 @@
 
   &__col_form {
     flex: 1;
+
+    @media (min-width: 993px) {
+      max-width: 730px;
+    }
 
     @media (max-width: 992px) {
       margin-bottom: 80px;

@@ -4,6 +4,10 @@
   --gutter: 30px;
   --outer-margin: 150px;
 
+  @media (max-width: 480px) {
+    --gutter: 15px;
+  }
+
   @media (max-width: 768px) {
     --outer-margin: 90px;
   }

@@ -3,6 +3,7 @@
   margin-bottom: var(--outer-margin);
   background-image: url('../img/hero-background.png');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
  
 
@@ -45,8 +46,13 @@
     font-size: 6.4rem;
     text-transform: uppercase;
     line-height: 1;
+
     @media (min-width: 577px) {
       white-space: nowrap;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 4rem;
     }
   }
 
