@@ -17,9 +17,14 @@
     font-family: 'Open Sans';
     font-size: 1.2rem;
     color: #989898;
+
+    @media (max-width: 460px) {
+      text-align: center;
+    }
   }
 
   &__dev {
     @extend .footer__copy;
+
   }
 }

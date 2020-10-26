@@ -9,7 +9,6 @@
     ".babelrc.js": true,
     "tmp": true,
     "package.json": true,
-    "gulpfile.babel.js": true,
     "node_modules": true
   }
 }
