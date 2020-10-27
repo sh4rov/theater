@@ -5,4 +5,5 @@
     ul.mobile-menu__list
       each title in menu.links
         li.mobile-menu__item: a.mobile-menu__link(href="#")= title
-    include ../socials/socials
+    .mobile-menu__socials
+      include ../mobile-menu-socials/mobile-menu-socials
