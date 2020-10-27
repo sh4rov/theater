@@ -1,0 +1,25 @@
+.mobile-menu-socials {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: -2.5rem;
+  }
+  
+  &__link {
+    padding: 2.5rem;
+    display: block;
+    color: currentColor;
+    @extend .trans-all;
+  }
+
+  &__link:hover {
+    color: $clr-secondary;
+  }
+  
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
